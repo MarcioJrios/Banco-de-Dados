@@ -1,0 +1,13 @@
+psql -U postgres -h localhost -d postgres
+
+create database;
+
+create table;
+
+\c "entra em um banco especifico"
+
+\d "exibe o banco atual"
+
+drop table/database "exclui"
+
+select * from "exibe elementos da tabela"
