@@ -11,3 +11,20 @@ create table;
 drop table/database "exclui"
 
 select * from "exibe elementos da tabela"
+
+ALTER TABLE nome_tabela add constraint nome_restrição PRIMARY KEY()
+ALTER TABLE nome_tabela alter collumn nome_col set not null / drop not null
+
+create user nome_user password 'senha';
+
+UPDATE nome_tabela SET coluna = valor [condicao];Condição opcional
+
+DELETE FROM nome_tabela [condição];Condição opcional
+Condições : where [condição]; ex where cod = 6245;
+
+JOIN = junção de tabelas
+ex : tabela R e S = select R.b , S.y FROM R JOIN S on R.a = S.a;
+
+select R.b, S.y FROM R NATURAL JOIN S;
+atributo = null não existe
+atributo is null
