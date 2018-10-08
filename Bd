@@ -28,3 +28,7 @@ ex : tabela R e S = select R.b , S.y FROM R JOIN S on R.a = S.a;
 select R.b, S.y FROM R NATURAL JOIN S;
 atributo = null não existe
 atributo is null
+
+ ***  select route.rnumber as "Codigo Rota", s1.sname as "estação origem", s2.sname as "estação destino" from route 
+join station s1 on s1.sid = fromsid join station s2 on s2.sid = tosid;
+
