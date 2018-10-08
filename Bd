@@ -32,3 +32,6 @@ atributo is null
  ***  select route.rnumber as "Codigo Rota", s1.sname as "estação origem", s2.sname as "estação destino" from route 
 join station s1 on s1.sid = fromsid join station s2 on s2.sid = tosid;
 
+ ***  select s1.sname as "estação origem", s2.sname as "estação destino", h.sctime as "hora" from route join station s1 on s1.sid = fromsid 
+join station s2 on s2.sid = tosid join schedule h on h.rnumber = route.rnumber; 
+
