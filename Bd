@@ -35,3 +35,7 @@ join station s1 on s1.sid = fromsid join station s2 on s2.sid = tosid;
  ***  select s1.sname as "estação origem", s2.sname as "estação destino", h.sctime as "hora" from route join station s1 on s1.sid = fromsid 
 join station s2 on s2.sid = tosid join schedule h on h.rnumber = route.rnumber; 
 
+ ***  select frm.sname from route r join station frm on frm.sid = r.fromsid join schedule s on s.rnumber = r.rnumber
+ join ticket t on t.scid = s.scid group by frm.sid having count(*)= (select max(x.tqt) from(select count(*)as tqt from 
+ route r join station frm on frm.sid =  r.fromsid join schedule s on s.rnumber = r.rnumber join ticket t  on t.scid = s.scid
+ group by frm.sname)x);
